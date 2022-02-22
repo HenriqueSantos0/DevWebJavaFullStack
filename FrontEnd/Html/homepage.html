@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Homepage curso Html</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	</head>
+	<body>
+
+		<header>
+			<h2>Curso Front-end - HTML</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<h3>Aulas</h3>
+				<ul>
+					<li><a href="AulaDeIntroducao.html">Introdução</a></li>
+					<li><a href="ListasELinks.html">Listas e Links</a></li>
+					<li><a href="FormatacaoDeTexto.html">Formatação de Texto</a></li>
+					<li><a href="TabelasELayoutsTabelados.html">Tabelas</a></li>
+					<li><a href="LayoutsHTML.html">Layouts</a></li>
+					<li><a href="Formulario.html">Formulários</a></li>
+                    <li><a href="Sobre.html">Sobre</a></li> <!-- Adicionei essa pagina para deixar o link de navegação completo -->
+				</ul>
+
+				<h3>Redes Sociais</h3>
+				<ul>
+					<li><a href="https://www.linkedin.com/in/eng-henrique-santos-6a11b976/" target="_blank">LinkedIn</a></li>
+					<li><a href="https://github.com/HenriqueSantos0/DevWebJavaFullStack" target="_blank">Repositorio curso</a></li> <!-- Não tenho um instagram profissional, por isso adicionei o link do Repositrio onde estou guardando os materiais do cruso-->
+				</ul>
+			</nav>
+
+			<article>
+
+				<img width="200" src="https://media-exp1.licdn.com/dms/image/C4D03AQHSQ12IwgKTBQ/profile-displayphoto-shrink_200_200/0/1621004764496?e=1650499200&v=beta&t=zltHNflLKhmvqoX19JlHfNtmZIeLpXAA4Ea2QF7Irfo" height="200" alt="Henrique Santos">
+				
+				<h2>Henrique Santos</h2>
+
+				<p>Sou um engenheiro de dados júnior, iniciando a carreira voltada aos perfis de <a href="https://medium.com/data-hackers/os-tipos-de-engenheiros-de-dados-c3674b4d74d1" target="_blank">builder</a> e <a href="https://medium.com/data-hackers/os-tipos-de-engenheiros-de-dados-c3674b4d74d1" target="_blank">code</a>.<br> 
+                    Atuando principalmente com provisionamento em <a href="https://pt.wikipedia.org/wiki/Computa%C3%A7%C3%A3o_em_nuvem" target="_blank">cloud</a> e construção de <a href="https://medium.com/datalakers-blog/gloss%C3%A1rio-de-dados-o-que-%C3%A9-data-pipeline-628e509e9cb5" target="_blank">pipelines de dados</a>.<br>
+                    Entusiasta do conhecimento venho me desenvolvendo no estudo como Desenvolvedor Java Full Stack na <a href="https://ebaconline.com.br/" target="_blank"><strong>EBAC</strong></a>.</p>
+				
+
+			</article>
+
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Henrique Santos</p>
+		</footer>
+		
+	</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Recrutando Front-End </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1">
+        <style> 
+           * {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			} 
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>
+                Home
+            </h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="./Sobre.html">Sobre</a></li>
+                    <li><a href="./Formulario.html">Formulario</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h1>
+                    Titulo de artigo
+                </h1>
+                <p>O desenvolvimento web é dividido em duas partes principais: o backend e o front end. O front end é responsável por se preocupar mais com a experiência (UX) e interface exibida para o usuário (UI)  trabalhando principalmente com HTML, CSS e JavaScript. Já, o backend trata de tudo que está por trás das regras de negócio e construção das informações a partir dos dados. São esses programadores que fazem a magia acontecer “nos bastidores”, desenvolvendo códigos, por meio de linguagens como Python, Java, PHP e SQL.</p>
+                <p>A função desse profissional é muito importante no desenvolvimento web, visto que o seu trabalho está diretamente ligado à experiência do usuário. Para isso, um desenvolvedor front end vai desenvolver em HTML, CSS e JavaScript, além de utilizar bibliotecas como bootstrap, material design, etc. e a própria Lógica de Programação.</p> 
+                <p>Um desenvolvedor front end deve ser curioso e estar sempre em busca de novos aprendizados. Como o trabalho abrange várias tecnologias e ferramentas diferentes, ele deverá ficar antenado a respeito das novidades da área, buscando sempre a melhor e mais viável solução para o problema a ser resolvido.</p>
+            </article>
+        </section>
+
+        <footer>
+            <p>
+                Desenvolvido por <a href="https://www.linkedin.com/in/eng-henrique-santos-6a11b976/">Henrique Santos</a>
+            </p>
+        </footer>
+
+    </body>
+</html>
